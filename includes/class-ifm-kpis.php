@@ -1,0 +1,2 @@
+<?php
+// Platzhalter – Code folgt
