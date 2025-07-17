@@ -90,7 +90,6 @@ class IFM_Forecast {
 
         $bestseller = self::get_bestseller($from_date, $to_date);
 
-        // ---------- FORECASTING (EXAKT DEINER LOGIK) ----------
         // Prognose basiert auf den letzten 28 Tagen (oder Zeitraum im Chart, falls weniger)
         $forecast_days = 7;
         $forecast_source_days = min(count($dates), 28); // max. 28 Tage, aber nicht mehr als aktuell ausgewählt
