@@ -3,7 +3,6 @@
 require_once IFM_PLUGIN_DIR . 'vendor/autoload.php';
 
 // Lager-Daten aus der Klasse holen
-// Hier bauen wir ein Array mit allen Produkten und Varianten mit Namen, ID und Lagerbestand
 $main_products = [
     'VITARING' => [],
     'VITARING PRO' => [],
@@ -101,7 +100,7 @@ foreach ($main_products as $group_title => $products_group) {
     $html .= '</tbody></table>';
 }
 
-// Hilfsfunktion für Status (ähnlich wie deine ampel_status())
+// Hilfsfunktion für Status
 function get_stock_status_label($stock) {
     if ($stock === null) {
         return ['label' => '–', 'class' => ''];
