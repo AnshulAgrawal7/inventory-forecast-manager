@@ -1,5 +1,5 @@
 <?php
-// mPDF autoload einbinden (Pfad ggf. anpassen)
+// mPDF autoload einbinden 
 require_once IFM_PLUGIN_DIR . 'vendor/autoload.php';
 
 // --- KPI/Forecast Berechnung wie gehabt ---
